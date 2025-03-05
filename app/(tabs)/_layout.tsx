@@ -40,6 +40,15 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="edit-technician"
+        options={{
+          title: 'Edit Technician',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="pencil" color={color} />, // ไอคอนที่เหมาะสมสำหรับการแก้ไข
+          // ซ่อนปุ่มใน Tab Bar หากไม่ต้องการให้แสดงใน Tab
+         // tabBarButton: () => null, // หรือกำหนดให้แสดงตามต้องการ
+        }}
+      />
     </Tabs>
   );
 }
